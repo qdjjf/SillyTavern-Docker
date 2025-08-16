@@ -30,7 +30,7 @@ whitelist:
   - ::1
   - 127.0.0.1
 whitelistDockerHosts: true
-basicAuthMode: false
+basicAuthMode: true
 basicAuthUser:
   username: "${USERNAME}"
   password: "${PASSWORD}"
