@@ -30,7 +30,7 @@ whitelist:
   - ::1
   - 127.0.0.1
 whitelistDockerHosts: true
-basicAuthMode: true
+basicAuthMode: false
 basicAuthUser:
   username: "${USERNAME}"
   password: "${PASSWORD}"
@@ -41,8 +41,8 @@ requestProxy:
   bypass:
     - localhost
     - 127.0.0.1
-enableUserAccounts: false
-enableDiscreetLogin: false
+enableUserAccounts: true
+enableDiscreetLogin: true
 autheliaAuth: false
 perUserBasicAuth: false
 sessionTimeout: -1
