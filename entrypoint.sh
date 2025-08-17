@@ -1,4 +1,12 @@
 #!/bin/sh
+
+# 在脚本最开始打印当前时间以供调试
+echo "Container starting up. Current time is: $(date)"
+
+# ... 脚本的其余部分
+
+
+
 set -e
 
 CONFIG_FILE="${APP_HOME}/config.yaml"
