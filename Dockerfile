@@ -1,5 +1,11 @@
 FROM node:lts-alpine3.19
 
+
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+
+
 # Arguments
 ARG APP_HOME=/home/node/app
 ARG PLUGINS="" # Comma-separated list of plugin git URLs
